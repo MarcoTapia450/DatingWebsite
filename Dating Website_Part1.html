@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dating Website</title>
+</head>
+<body>
+
+<h2> Please Enter Your Details For Our Dating Website </h2>
+
+    <fieldset>
+        <legend> Your Face </legend>
+
+        <label for="Your Image"> Your Image: </label>
+    <input type="file" required
+           id="Your Image"
+           name="Your Image">
+
+
+
+        <br>
+
+        <img id="preview">
+        <label for="preview">Image Preview: </label>
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend> Your General Details</legend>
+
+        <label for="Your Name"> Your Name: </label>
+        <input type="text" required
+               id="Your Name"
+               name="Your Name">
+
+
+                    <br>
+
+        <form>
+                <label for="gender"> Gender:</label>
+            <input id="gender"
+                   type="radio"
+                   name="gender"
+                   value="male"
+                   required
+                   checked> Male
+            <input type="radio"
+                   name="gender"
+                   value="female"
+                   required >Female
+
+        </form>
+
+        <label for="age"> Age: </label>
+        <input type="number" required
+               id="age"
+               name="age"
+                min="18">
+
+            <br>
+
+        <label for="date"> Date of Birth:</label>
+        <input type="date"
+               id="date"
+               name="date">
+
+            <br>
+
+        <label for="color"> Favorite Color:</label>
+        <input type="color"
+               id="color"
+               name="color">
+
+                    <br>
+
+        <label for="option"> Which Country:</label>
+        <select id="option">
+            <option value="USA"> USA </option>
+            <option value="Mexico"> Mexico </option>
+            <option value="Canada"> Canada </option>
+            <option value="UK"> UK </option>
+            <option value="Other"> Other </option>
+            <option value="no selection"> no selection </option>
+        </select>
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend> Your Indicators </legend>
+
+        <label for="height">Height: Short</label>
+        <input type="range"
+                min="0"
+                max="100"
+               id="height"
+               name="height"> Tall
+
+                <br>
+
+        <label for="height">Salary: Poor</label>
+        <input type="range"
+               min="0"
+               max="100"
+               id="Salary"
+               name="Salary"> Rich
+
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend> Your Contact Information</legend>
+
+        <label for="email"> Email:</label>
+        <input type="email" required
+               id="email"
+               name="email">
+
+                <br>
+
+        <label for="tel"> Mobile:</label>
+        <input type="tel"
+               id="tel"
+               name="tel">
+
+                <br>
+
+        <label for="textarea"> Address:</label>
+        <textarea id="textarea"></textarea>
+
+                <br>
+
+        <label for="checkbox">Method to Contact You: </label>
+        <input type="checkbox"
+               id="checkbox"
+               name="checkbox"> Email
+        <input type="checkbox"> Whatsapp
+        <input type="checkbox"> In-app chat
+
+
+    </fieldset>
+
+
+<input type="submit"
+       id="submit"
+       name="submit">
+
+
+
+
+
+
+
+
+
+</body>
+</html>
