@@ -3,6 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Dating Website</title>
+
+    <style type="text/css">
+
+    fieldset {
+        background-color: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+    }
+
+        label {
+            width: 180px;
+            display: inline-block;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        form {
+            width: auto;
+        }
+
+        textarea {
+            width: 360px;
+            height: 50px;
+        }
+
+
+
+    span.Tall {
+        display: inline;
+        font-weight: normal;
+        color: white;
+        background-color: purple;
+        border: 2px solid purple;
+        padding-left:7px ;
+        padding-right: 7px;
+        text-align: center;
+    }
+    span.Short {
+        display: inline;
+        font-weight: normal;
+        color: white;
+        background-color: #a70e03;
+        border: 2px solid #a70e03;
+        vertical-align: top;
+
+    }
+    span.Poor {
+        display: inline;
+        font-weight: normal;
+        color: white;
+        background-color: #a70e03;
+        border: 2px solid #a70e03;
+        padding-left: 3px;
+        padding-right: 2.5px;
+        text-align: center;
+        vertical-align: top;
+    }
+    span.Rich {
+        display: inline;
+        font-weight: normal;
+        color: white;
+        background-color: purple;
+        border: 2px solid purple;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    input.align {
+        display: table-cell;
+        vertical-align: middle;
+        height: 6px;
+        border: 1px solid ;
+        padding-left: 2px;
+    }
+
+
+    label:hover { font-size:40px }
+
+
+
+    <style>
+
+
+    article, aside, figure, footer, header, hgroup,
+
+    menu, nav, section { display: block; }
+
+    </style>
+
+    <script type=&quot;text/javascript>
+
+    function readURL(input) {
+
+    if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+
+    $('#blah')
+
+    .attr('src', e.target.result)
+
+    .width(150)
+
+    .height(200);
+
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+    }
+
+    }
+
+    </script>
+
 </head>
 <body>
 
@@ -45,6 +163,7 @@
                    value="male"
                    required
                    checked> Male
+
             <input type="radio"
                    name="gender"
                    value="female"
@@ -90,21 +209,25 @@
     <fieldset>
         <legend> Your Indicators </legend>
 
-        <label for="height">Height: Short</label>
-        <input type="range"
+
+            <div>
+        <label for="height">Height:</label>
+
+        <span class="Short" > Short </span>  <input class="align" type="range"
                 min="0"
                 max="100"
                id="height"
-               name="height"> Tall
+               name="height">   <span class="Tall"> Tall</span>
 
                 <br>
 
-        <label for="height">Salary: Poor</label>
-        <input type="range"
+        <label for="height">Salary:</label>
+        <span class="Poor">Poor </span> <input class="align" type="range"
                min="0"
                max="100"
                id="Salary"
-               name="Salary"> Rich
+               name="Salary">    <span class="Rich">Rich</span>
+            </div>
 
     </fieldset>
 
@@ -132,13 +255,15 @@
 
                 <br>
 
+
+            <form>
         <label for="checkbox">Method to Contact You: </label>
         <input type="checkbox"
                id="checkbox"
                name="checkbox"> Email
         <input type="checkbox"> Whatsapp
         <input type="checkbox"> In-app chat
-
+            </form>
 
     </fieldset>
 
@@ -152,7 +277,14 @@
 
 
 
+<script>
 
+
+
+
+
+
+</script>
 
 
 </body>
